@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 
@@ -13,6 +14,29 @@ namespace QuanLyBanHang
             db = new DataQuanLyBanHangDataContext();
         }
 
+        public DataTable DSKhachHang()//phải return vè dsNV
+        {
+            var dsKH = db.KHACHHANGs.ToList();
+            DataTable dt = new DataTable();
+            dt.Columns.Add(new DataColumn("MaKH"));
+            dt.Columns.Add(new DataColumn("TenKH"));
+            dt.Columns.Add(new DataColumn("Diachi"));
+            dt.Columns.Add(new DataColumn("SoDT"));
+            if (dsKH != null && dsKH.Count > 0)
+            {
+                foreach (var kh in dsKH)
+                {
+                    DataRow dr = dt.NewRow(); 
+                    dr[0] = kh.MaKH;
+                    dr[1] = kh.TenKH;
+                    dr[2] = kh.Diachi;
+                    dr[3] = kh.SoDT;
+                    dt.Rows.Add(dr);
+                }
+                return dt;  
+            }
+            return dt;
+        }
 
         public dynamic LayDSKhachHang()//phải return vè dsNV
         {
@@ -21,7 +45,7 @@ namespace QuanLyBanHang
                 s.MaKH,
                 s.TenKH,
                 s.Diachi,
-                s.SoDT   
+                s.SoDT
             });
             return dsKH;
         }

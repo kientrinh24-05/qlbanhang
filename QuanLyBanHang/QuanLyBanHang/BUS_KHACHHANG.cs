@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -12,6 +13,11 @@ namespace QuanLyBanHang
         public BUS_KHACHHANG()
         {
             daoKH = new DAO_KHACHHANG();
+        }
+
+        public DataTable DSKhachHang()
+        {   
+            return daoKH.DSKhachHang();
         }
 
         public void DSKhachHang(DataGridView dg)
