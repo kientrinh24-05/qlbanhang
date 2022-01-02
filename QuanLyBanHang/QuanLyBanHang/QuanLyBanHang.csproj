@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F2164DDE-7F22-48A8-927C-36F0905B124D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLyBanHang</RootNamespace>
+    <AssemblyName>QuanLyBanHang</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>QuanLyBanHang.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel1">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office15\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BUS_CHITIETBANHANG.cs" />
+    <Compile Include="BUS_CHITIETPHIEUNHAP.cs" />
+    <Compile Include="BUS_BANHANG.cs" />
+    <Compile Include="BUS_KHACHHANG.cs" />
+    <Compile Include="BUS_NCC.cs" />
+    <Compile Include="BUS_NHANVIEN.cs" />
+    <Compile Include="BUS_NHAPHANG.cs" />
+    <Compile Include="BUS_SANPHAM.cs" />
+    <Compile Include="BUS_TONKHO.cs" />
+    <Compile Include="DAO_BANHANG.cs" />
+    <Compile Include="DAO_CHITIETBANHANG.cs" />
+    <Compile Include="DAO_CHITIETPHIEUNHAP.cs" />
+    <Compile Include="DAO_KHACHHANG.cs" />
+    <Compile Include="DAO_NCC.cs" />
+    <Compile Include="DAO_NHANVIEN.cs" />
+    <Compile Include="DAO_NHAPHANG.CS" />
+    <Compile Include="DAO_SANPHAM.cs" />
+    <Compile Include="DAO_TONKHO.cs" />
+    <Compile Include="DataQuanLyBanHang.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataQuanLyBanHang.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="FBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBanHang.Designer.cs">
+      <DependentUpon>FBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FChiTietDonHangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FChiTietDonHangNhap.Designer.cs">
+      <DependentUpon>FChiTietDonHangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FKhachHang.Designer.cs">
+      <DependentUpon>FKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMoBai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMoBai.Designer.cs">
+      <DependentUpon>FMoBai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FNhaCungCap.Designer.cs">
+      <DependentUpon>FNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FNhanVien.Designer.cs">
+      <DependentUpon>FNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FNhapHang.Designer.cs">
+      <DependentUpon>FNhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSanPham.Designer.cs">
+      <DependentUpon>FSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FChitietDonHangBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FChitietDonHangBan.Designer.cs">
+      <DependentUpon>FChitietDonHangBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTonKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTonKho.Designer.cs">
+      <DependentUpon>FTonKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QUANLYBANHANGDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUANLYBANHANGDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VBButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="DataQuanLyBanHang.dbml.layout">
+      <DependentUpon>DataQuanLyBanHang.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FBanHang.resx">
+      <DependentUpon>FBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FChiTietDonHangNhap.resx">
+      <DependentUpon>FChiTietDonHangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FKhachHang.resx">
+      <DependentUpon>FKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMoBai.resx">
+      <DependentUpon>FMoBai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FNhaCungCap.resx">
+      <DependentUpon>FNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FNhanVien.resx">
+      <DependentUpon>FNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FNhapHang.resx">
+      <DependentUpon>FNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSanPham.resx">
+      <DependentUpon>FSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FChitietDonHangBan.resx">
+      <DependentUpon>FChitietDonHangBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTonKho.resx">
+      <DependentUpon>FTonKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DataQuanLyBanHang.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataQuanLyBanHang.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QUANLYBANHANGDataSet.xsc">
+      <DependentUpon>QUANLYBANHANGDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYBANHANGDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUANLYBANHANGDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUANLYBANHANGDataSet.xss">
+      <DependentUpon>QUANLYBANHANGDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\bg21.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

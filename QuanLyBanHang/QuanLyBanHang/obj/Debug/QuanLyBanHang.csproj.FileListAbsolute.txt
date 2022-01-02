@@ -1,0 +1,185 @@
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csprojResolveAssemblyReference.cache
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhanVien.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.Cache
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FKhachHang.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhaCungCap.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FSanPham.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhapHang.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FChiTietDonHangNhap.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FBanHang.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FChitietDonHangBan.resources
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csprojAssemblyReference.cache
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FBanHang.resources
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FChiTietDonHangNhap.resources
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FKhachHang.resources
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhaCungCap.resources
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhanVien.resources
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhapHang.resources
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FSanPham.resources
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FChitietDonHangBan.resources
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.cache
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CoreCompileInputs.cache
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FTonKho.resources
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.ReportViewer.Common.dll
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.Build.Utilities.v3.5.dll
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\bin\Debug\ADODB.dll
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.Build.Utilities.v3.5.xml
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\obj\Debug\Interop.VBIDE.dll
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.ResolveComReference.cache
+H:\quocanh\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CopyComplete
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\obj\Debug\Interop.VBIDE.dll
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.ResolveComReference.cache
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.Build.Utilities.v3.5.dll
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\bin\Debug\ADODB.dll
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.Build.Utilities.v3.5.xml
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csprojResolveAssemblyReference.cache
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FBanHang.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FChiTietDonHangNhap.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FKhachHang.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhaCungCap.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhanVien.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhapHang.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FSanPham.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FChitietDonHangBan.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FTonKho.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Report\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.Cache
+C:\Users\tqm\Downloads\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+C:\Users\tqm\Downloads\QuanLyBanHang\QuanLyBanHang\obj\Debug\Interop.VBIDE.dll
+C:\Users\tqm\Downloads\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.ResolveComReference.cache
+C:\Users\tqm\Downloads\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+C:\Users\tqm\Downloads\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+C:\Users\tqm\Downloads\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csprojResolveAssemblyReference.cache
+C:\Users\tqm\Downloads\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FBanHang.resources
+C:\Users\tqm\Downloads\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FChiTietDonHangNhap.resources
+C:\Users\tqm\Downloads\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FKhachHang.resources
+C:\Users\tqm\Downloads\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhaCungCap.resources
+C:\Users\tqm\Downloads\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhanVien.resources
+C:\Users\tqm\Downloads\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhapHang.resources
+C:\Users\tqm\Downloads\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FSanPham.resources
+C:\Users\tqm\Downloads\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FChitietDonHangBan.resources
+C:\Users\tqm\Downloads\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FTonKho.resources
+C:\Users\tqm\Downloads\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+C:\Users\tqm\Downloads\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.Cache
+C:\Users\tqm\Downloads\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+C:\Users\tqm\Downloads\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+C:\Users\tqm\Downloads\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FMoBai.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\obj\Debug\Interop.VBIDE.dll
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.ResolveComReference.cache
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.Build.Utilities.v3.5.dll
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\bin\Debug\ADODB.dll
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.Build.Utilities.v3.5.xml
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csprojResolveAssemblyReference.cache
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FBanHang.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FChiTietDonHangNhap.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FKhachHang.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FMoBai.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhaCungCap.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhanVien.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhapHang.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FSanPham.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FChitietDonHangBan.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FTonKho.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\BTLon_CuoiKy_Final(1)\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.Cache
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\Interop.VBIDE.dll
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.ResolveComReference.cache
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.Build.Utilities.v3.5.dll
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\bin\Debug\ADODB.dll
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.Build.Utilities.v3.5.xml
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csprojResolveAssemblyReference.cache
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FBanHang.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FChiTietDonHangNhap.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FKhachHang.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FMoBai.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhaCungCap.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhanVien.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhapHang.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FSanPham.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FChitietDonHangBan.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FTonKho.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+D:\Liên Thông\Lập Trình Cơ Sở Dữ Liệu\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.Cache
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\Interop.VBIDE.dll
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.ResolveComReference.cache
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.Build.Utilities.v3.5.dll
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\bin\Debug\ADODB.dll
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.Build.Utilities.v3.5.xml
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csprojResolveAssemblyReference.cache
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FBanHang.resources
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FChiTietDonHangNhap.resources
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FKhachHang.resources
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FMoBai.resources
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhaCungCap.resources
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhanVien.resources
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhapHang.resources
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FSanPham.resources
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FChitietDonHangBan.resources
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FTonKho.resources
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+C:\Users\LENOVO\Desktop\DACK_01_DINHQUOCANH\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.Cache
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.Build.Utilities.v3.5.dll
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\bin\Debug\ADODB.dll
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.Build.Utilities.v3.5.xml
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.AssemblyReference.cache
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.SuggestedBindingRedirects.cache
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\obj\Debug\Interop.VBIDE.dll
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.ResolveComReference.cache
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FBanHang.resources
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FChiTietDonHangNhap.resources
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FKhachHang.resources
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FMoBai.resources
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhaCungCap.resources
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhanVien.resources
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FNhapHang.resources
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FSanPham.resources
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FChitietDonHangBan.resources
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FTonKho.resources
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.cache
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CoreCompileInputs.cache
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CopyComplete
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+C:\Users\Kien\Downloads\DAN\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
