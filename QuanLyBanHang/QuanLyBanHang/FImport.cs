@@ -32,28 +32,38 @@ namespace QuanLyBanHang
                 
                     if (ofd.ShowDialog() == DialogResult.OK)
                     {
-                        using (var stream= File.Open(ofd.FileName, FileMode.Open, FileAccess.Read))
+                        try
                         {
-                            txtFilePath.Text = stream.Name;
-                            using (IExcelDataReader reader=ExcelReaderFactory.CreateReader(stream))
+                            using (var stream = File.Open(ofd.FileName, FileMode.Open, FileAccess.Read))
                             {
-                                DataSet result = reader.AsDataSet(new ExcelDataSetConfiguration()
+                                txtFilePath.Text = stream.Name;
+                                using (IExcelDataReader reader = ExcelReaderFactory.CreateReader(stream))
                                 {
-                                    ConfigureDataTable= (_) => new ExcelDataTableConfiguration() { UseHeaderRow=true}
-                                });
-                                dataTableCollection = result.Tables;
-                            
-                                foreach(DataTable b in dataTableCollection)
-                                {
-                                    str = b.TableName;
-                                }    
-                            }    
-                        }    
-                    }    
+                                    DataSet result = reader.AsDataSet(new ExcelDataSetConfiguration()
+                                    {
+                                        ConfigureDataTable = (_) => new ExcelDataTableConfiguration() { UseHeaderRow = true }
+                                    });
+                                    dataTableCollection = result.Tables;
+
+                                    foreach (DataTable b in dataTableCollection)
+                                    {
+                                        str = b.TableName;
+                                    }
+                                }
+                            }
+                            dt = dataTableCollection[str];
+                            Browse.Hide();
+                            Save.Show();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                }    
             }
-            dt = dataTableCollection[str];
-            Browse.Hide();
-            Save.Show();
+           
+            
         }
 
         private void FImport_Load(object sender, EventArgs e)
@@ -88,6 +98,9 @@ namespace QuanLyBanHang
                     busKH.ThemKH(KhachHang);
                 }
                 MessageBox.Show("Import thành công", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                FKhachHang kh = new FKhachHang();
+                this.Hide();
+                kh.ShowDialog();
             }
             else
             {
