@@ -63,7 +63,7 @@ namespace QuanLyBanHang
     #endregion
 		
 		public DataQuanLyBanHangDataContext() : 
-				base(global::QuanLyBanHang.Properties.Settings.Default.QUANLYBANHANG2ConnectionString, mappingSource)
+				base(global::QuanLyBanHang.Properties.Settings.Default.QUANLYBANHANGConnectionString2, mappingSource)
 		{
 			OnCreated();
 		}
