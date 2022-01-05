@@ -267,3 +267,4 @@ C:\Users\Kien\Desktop\qlbanhang\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.
 C:\Users\Kien\Desktop\qlbanhang\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.Build.Utilities.v3.5.xml
 C:\Users\Kien\Desktop\qlbanhang\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CopyComplete
 C:\Users\Kien\Desktop\qlbanhang\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FHoadonban.resources
+C:\Users\Admin\Desktop\qlbanhang\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FHoadonban.resources
