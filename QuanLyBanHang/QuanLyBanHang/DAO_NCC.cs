@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 
@@ -8,10 +9,34 @@ namespace QuanLyBanHang
     class DAO_NCC
     {
 
-        DataQuanLyBanHangDataContext db;
+        QLBHDataContext db;
         public DAO_NCC()
         {
-            db = new DataQuanLyBanHangDataContext();
+            db = new QLBHDataContext();
+        }
+
+        public DataTable DSNCC()//phải return vè dsNV
+        {
+            var dsNCC = db.NHACUNGCAPs.ToList();
+            DataTable dt = new DataTable();
+            dt.Columns.Add(new DataColumn("MaNCC"));
+            dt.Columns.Add(new DataColumn("TenNCC"));
+            dt.Columns.Add(new DataColumn("Diachi"));
+            dt.Columns.Add(new DataColumn("SoDT"));
+            if (dsNCC != null && dsNCC.Count > 0)
+            {
+                foreach (var kh in dsNCC)
+                {
+                    DataRow dr = dt.NewRow();
+                    dr[0] = kh.MaNCC;
+                    dr[1] = kh.TenNCC;
+                    dr[2] = kh.Diachi;
+                    dr[3] = kh.SoDT;
+                    dt.Rows.Add(dr);
+                }
+                return dt;
+            }
+            return dt;
         }
         public dynamic LayDSNCC()//phải return vè dsNV
         {

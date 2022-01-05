@@ -13,6 +13,7 @@ namespace QuanLyBanHang
     public partial class FKhachHang : Form
     {
         BUS_KHACHHANG busKH;
+        
         public FKhachHang()
         {
            
@@ -213,7 +214,8 @@ namespace QuanLyBanHang
 
         private void Import_Click(object sender, EventArgs e)
         {
-            FImport import = new FImport();
+            string url = "khachhang";
+            FImport import = new FImport(url);
             this.Hide();
             import.ShowDialog();
         }

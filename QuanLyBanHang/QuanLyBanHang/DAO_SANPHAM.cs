@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 
@@ -7,10 +8,36 @@ namespace QuanLyBanHang
 {
     class DAO_SANPHAM
     {
-        DataQuanLyBanHangDataContext db;
+        QLBHDataContext db;
        public DAO_SANPHAM()
         {
-            db = new DataQuanLyBanHangDataContext();
+            db = new QLBHDataContext();
+        }
+
+        public DataTable DSSP()//phải return vè dsNV
+        {
+            var dsSP = db.SANPHAMs.ToList();
+            DataTable dt = new DataTable();
+            dt.Columns.Add(new DataColumn("MaSP"));
+            dt.Columns.Add(new DataColumn("TenSP"));
+            dt.Columns.Add(new DataColumn("DVT"));
+            dt.Columns.Add(new DataColumn("DONGIA_NHAP"));
+            dt.Columns.Add(new DataColumn("DONGIA_BAN"));
+            if (dsSP != null && dsSP.Count > 0)
+            {
+                foreach (var kh in dsSP)
+                {
+                    DataRow dr = dt.NewRow();
+                    dr[0] = kh.MaSP;
+                    dr[1] = kh.TenSP;
+                    dr[2] = kh.DVT;
+                    dr[3] = kh.DONGIA_NHAP;
+                    dr[4] = kh.DONGIA_BAN;
+                    dt.Rows.Add(dr);
+                }
+                return dt;
+            }
+            return dt;
         }
 
         public dynamic DSSanPham()
@@ -22,8 +49,6 @@ namespace QuanLyBanHang
                 s.DONVITINH.TenDVT,
                 s.DONGIA_NHAP,
                 s.DONGIA_BAN
-
-
             }
 
             );
@@ -96,12 +121,13 @@ namespace QuanLyBanHang
                                             s.DONVITINH.TenDVT,
                                             s.DONGIA_NHAP,
                                             s.DONGIA_BAN
-                                       
-
-
                                         });
-
             return dsSP;
+        }
+
+        public string MaTrinhDo(string trinhdo)
+        {
+            return db.TRINHDOs.Where(c => c.TENTRINHDO == trinhdo).Select(c => c.MATRINHDO).FirstOrDefault();
         }
 
     }

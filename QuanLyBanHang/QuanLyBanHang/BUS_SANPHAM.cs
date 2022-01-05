@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -15,6 +16,10 @@ namespace QuanLyBanHang
 
         }
 
+        public DataTable DSSP()
+        {
+            return daSP.DSSP();
+        }
         public void DSSanPham(DataGridView dg)
         {
             dg.DataSource = daSP.DSSanPham();
@@ -64,6 +69,11 @@ namespace QuanLyBanHang
         public void TimKiemSanPham(DataGridView dg, String SanPham)
         {
             dg.DataSource = daSP.TimKiemSanPham(SanPham);
+        }
+
+        public string MaTrinhDo(string trinhdo)
+        {
+            return daSP.MaTrinhDo(trinhdo);
         }
 
     }

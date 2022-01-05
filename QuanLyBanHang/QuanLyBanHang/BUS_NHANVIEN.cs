@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -13,7 +14,10 @@ namespace QuanLyBanHang
         {
             daNV = new DAO_NHANVIEN();
         }
-
+        public DataTable DSNV()
+        {
+            return daNV.DSNV();
+        }
         public void DSNhanVien(DataGridView dg)
         {
             dg.DataSource = daNV.LayDSNhanVien();

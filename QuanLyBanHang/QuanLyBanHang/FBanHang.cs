@@ -40,7 +40,7 @@ namespace QuanLyBanHang
                 NH.MaDH = txtMaDH.Text;
                 NH.NHANVIEN_FK = cbNhanVien.SelectedValue.ToString();
                 NH.KHACHHANG_FK = cbKH.SelectedValue.ToString();
-                NH.NgayBan = dtpNgayBan.Text;
+                NH.NgayBan = dtpNgayBan.Value.ToString("MM/dd/yyyy");
                 busBanHang.ThemDonHang(NH);
                 busBanHang.DSDonHang(dGBanHang);
             }
@@ -52,7 +52,7 @@ namespace QuanLyBanHang
             NH.MaDH = txtMaDH.Text;
             NH.NHANVIEN_FK = cbNhanVien.SelectedValue.ToString();
             NH.KHACHHANG_FK = cbKH.SelectedValue.ToString();
-            NH.NgayBan = dtpNgayBan.Text;
+            NH.NgayBan = dtpNgayBan.Value.ToString("MM/dd/yyyy");
             busBanHang.SuaDonHang(NH);
             busBanHang.DSDonHang(dGBanHang);
         }
@@ -66,7 +66,7 @@ namespace QuanLyBanHang
                 txtMaDH.Text = dGBanHang.Rows[e.RowIndex].Cells["MaDH"].Value.ToString();
                 cbKH.SelectedValue = dGBanHang.Rows[e.RowIndex].Cells["KhachHang_fk"].Value.ToString();
                 cbNhanVien.SelectedValue = dGBanHang.Rows[e.RowIndex].Cells["Nhanvien_FK"].Value.ToString();
-                dtpNgayBan.Text = dGBanHang.Rows[e.RowIndex].Cells["NgayBan"].Value.ToString();
+                dtpNgayBan.Value = Convert.ToDateTime(dGBanHang.Rows[e.RowIndex].Cells["NgayBan"].Value.ToString());
                 txtTongTien.Text= dGBanHang.Rows[e.RowIndex].Cells["TongTien"].Value.ToString();
 
 

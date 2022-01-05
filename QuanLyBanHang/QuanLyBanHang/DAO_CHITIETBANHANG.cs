@@ -7,11 +7,11 @@ namespace QuanLyBanHang
 {
     class DAO_CHITIETBANHANG
     {
-        DataQuanLyBanHangDataContext db;
+        QLBHDataContext db;
 
         public DAO_CHITIETBANHANG()
         {
-            db = new DataQuanLyBanHangDataContext();
+            db = new QLBHDataContext();
 
         }
 

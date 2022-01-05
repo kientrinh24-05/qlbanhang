@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -12,6 +13,10 @@ namespace QuanLyBanHang
         public BUS_NCC()
         {
             daNCC = new DAO_NCC();
+        }
+        public DataTable DSNCC()
+        {
+            return daNCC.DSNCC();
         }
 
         public void DSNCC(DataGridView dg)

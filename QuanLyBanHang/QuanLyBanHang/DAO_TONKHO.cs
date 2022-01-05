@@ -7,15 +7,16 @@ namespace QuanLyBanHang
 {
     class DAO_TONKHO
     {
-        DataQuanLyBanHangDataContext db;
+        QLBHDataContext db;
 
         public DAO_TONKHO()
         {
-            db = new DataQuanLyBanHangDataContext();
+            db = new QLBHDataContext();
         }
 
         public dynamic GetTonKho(DateTime dFrom, DateTime dTo, string Item)
         {
+            
             var ds = db.TonKho(dFrom, dTo, Item);
             return ds;
         }

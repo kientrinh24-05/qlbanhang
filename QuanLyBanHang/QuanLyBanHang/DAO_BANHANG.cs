@@ -7,10 +7,10 @@ namespace QuanLyBanHang
 {
     class DAO_BANHANG
     {
-        DataQuanLyBanHangDataContext db;
+        QLBHDataContext db;
         public DAO_BANHANG()
         {
-            db = new DataQuanLyBanHangDataContext();
+            db = new QLBHDataContext();
 
         }
 
@@ -88,7 +88,7 @@ namespace QuanLyBanHang
                                         .Select(s => new
                                         {
                                             s.MaDH,
-                                            s.NHANVIEN_FK,
+                                            s.NHANVIEN_FK,                                           
                                             s.NHANVIEN.TenNV,
                                             s.KHACHHANG_FK,
                                             s.KHACHHANG.TenKH,

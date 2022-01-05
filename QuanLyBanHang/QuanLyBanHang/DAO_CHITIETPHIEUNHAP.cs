@@ -7,10 +7,10 @@ namespace QuanLyBanHang
 {
     class DAO_CHITIETPHIEUNHAP
     {
-        DataQuanLyBanHangDataContext db;
+        QLBHDataContext db;
         public DAO_CHITIETPHIEUNHAP()
         {
-            db = new DataQuanLyBanHangDataContext();
+            db = new QLBHDataContext();
         }
 
         public dynamic LayDSSP()

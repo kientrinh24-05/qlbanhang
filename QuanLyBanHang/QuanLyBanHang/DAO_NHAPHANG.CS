@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 
@@ -7,10 +8,10 @@ namespace QuanLyBanHang
 {
     class DAO_NHAPHANG
     {
-        DataQuanLyBanHangDataContext db;
+        QLBHDataContext db;
         public DAO_NHAPHANG()
         {
-            db = new DataQuanLyBanHangDataContext();
+            db = new QLBHDataContext();
         }
 
         public dynamic LayDSDonNhap()

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClosedXML.Excel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -49,7 +50,7 @@ namespace QuanLyBanHang
                     NhanVien.TenNV = txtTen.Text;
                     NhanVien.diachi = txtDiaChi.Text;
                     NhanVien.dienthoai = txtDienThoai.Text;
-                    NhanVien.NgaySinh = dtpNgaySinh.Text;
+                    NhanVien.NgaySinh = dtpNgaySinh.Value.ToString("MM/dd/yyyy");
                     NhanVien.CCCD = txtCCCD.Text;
                     NhanVien.MaTrinhDo = cbTrinhDo.SelectedValue.ToString();
                     busNV.ThemNV(NhanVien);
@@ -83,9 +84,9 @@ namespace QuanLyBanHang
         public bool kiemtraThem()
 
         {
-            if ( txtCCCD.Text.Length != 12)
+            if ( !(txtCCCD.Text.Length == 12 || txtCCCD.Text.Length == 10))
             {
-                MessageBox.Show("Vui lòng nhập số căn cước 12 số");
+                MessageBox.Show("Vui lòng nhập số căn cước 12 số hoặc 10 số");
                 txtCCCD.Text = "";
                 txtCCCD.Focus();
                 return false;
@@ -110,7 +111,7 @@ namespace QuanLyBanHang
                 txtMaNV.Text = dGNhanVien.Rows[e.RowIndex].Cells["MaNv"].Value.ToString();
                 txtHo.Text = dGNhanVien.Rows[e.RowIndex].Cells["HoNv"].Value.ToString();
                 txtTen.Text = dGNhanVien.Rows[e.RowIndex].Cells["TenNv"].Value.ToString();
-                dtpNgaySinh.Text = dGNhanVien.Rows[e.RowIndex].Cells["NgaySinh"].Value.ToString();
+                dtpNgaySinh.Value = Convert.ToDateTime(dGNhanVien.Rows[e.RowIndex].Cells["NgaySinh"].Value.ToString());
                 txtDienThoai.Text = dGNhanVien.Rows[e.RowIndex].Cells["dienthoai"].Value.ToString();
                 txtCCCD.Text = dGNhanVien.Rows[e.RowIndex].Cells["CCCD"].Value.ToString();
                 txtDiaChi.Text = dGNhanVien.Rows[e.RowIndex].Cells["DiaChi"].Value.ToString();
@@ -153,7 +154,7 @@ namespace QuanLyBanHang
                 NhanVien.dienthoai = txtDienThoai.Text;
                 NhanVien.TenNV = txtTen.Text;
                 NhanVien.HoNv = txtHo.Text;
-                NhanVien.NgaySinh = dtpNgaySinh.Text;
+                NhanVien.NgaySinh = dtpNgaySinh.Value.ToString("MM/dd/yyyy");
                 NhanVien.MaTrinhDo = cbTrinhDo.SelectedValue.ToString();
                 NhanVien.CCCD = txtCCCD.Text;
                 busNV.SuaNV(NhanVien);
@@ -250,6 +251,37 @@ namespace QuanLyBanHang
         private void txtCCCD_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Export_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
+            {
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        using (XLWorkbook workbook = new XLWorkbook())
+                        {
+                            workbook.Worksheets.Add(busNV.DSNV(), "DSNhanVien");
+                            workbook.SaveAs(sfd.FileName);
+                        }
+                        MessageBox.Show("You have successfully exported", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
+
+        private void Import_Click(object sender, EventArgs e)
+        {
+            string url = "nhanvien";
+            FImport import = new FImport(url);
+            this.Hide();
+            import.ShowDialog();
         }
     }
 }

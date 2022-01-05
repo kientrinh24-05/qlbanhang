@@ -1,26 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QUANLYBANHANG" Class="DataQuanLyBanHangDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=QUOC-ANH\sqlexpress;Initial Catalog=QUANLYBANHANG;Integrated Security=True" SettingsObjectName="QuanLyBanHang.Properties.Settings" SettingsPropertyName="QUANLYBANHANGConnectionString" Provider="System.Data.SqlClient" />
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QUANLYBANHANG" Class="QLBHDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=QUANLYBANHANG;Integrated Security=True" SettingsObjectName="QuanLyBanHang.Properties.Settings" SettingsPropertyName="QUANLYBANHANGConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TRINHDO" Member="TRINHDOs">
+    <Type Name="TRINHDO">
+      <Column Name="MATRINHDO" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TENTRINHDO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="TRINHDO_NHANVIEN" Member="NHANVIENs" ThisKey="MATRINHDO" OtherKey="MaTrinhDo" Type="NHANVIEN" />
+    </Type>
+  </Table>
   <Table Name="dbo.DONHANG" Member="DONHANGs">
     <Type Name="DONHANG">
       <Column Name="MaDH" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="NgayBan" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NgayBan" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="KHACHHANG_FK" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Column Name="NHANVIEN_FK" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Association Name="DONHANG_DONHANG_SANPHAM" Member="DONHANG_SANPHAMs" ThisKey="MaDH" OtherKey="MaDH" Type="DONHANG_SANPHAM" />
+      <Association Name="DONHANG_HOADONBANHANG_DONHANG" Member="HOADONBANHANG_DONHANGs" ThisKey="MaDH" OtherKey="MADH" Type="HOADONBANHANG_DONHANG" />
       <Association Name="KHACHHANG_DONHANG" Member="KHACHHANG" ThisKey="KHACHHANG_FK" OtherKey="MaKH" Type="KHACHHANG" IsForeignKey="true" />
       <Association Name="NHANVIEN_DONHANG" Member="NHANVIEN" ThisKey="NHANVIEN_FK" OtherKey="MaNv" Type="NHANVIEN" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.SANPHAM" Member="SANPHAMs">
-    <Type Name="SANPHAM">
-      <Column Name="MaSP" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="TenSP" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
-      <Column Name="DVT" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="DONGIA_NHAP" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="DONGIA_BAN" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Association Name="SANPHAM_DONHANG_SANPHAM" Member="DONHANG_SANPHAMs" ThisKey="MaSP" OtherKey="MaSP" Type="DONHANG_SANPHAM" />
-      <Association Name="SANPHAM_NHAPHANG_SANPHAM" Member="NHAPHANG_SANPHAMs" ThisKey="MaSP" OtherKey="MaSP" Type="NHAPHANG_SANPHAM" />
-      <Association Name="DONVITINH_SANPHAM" Member="DONVITINH" ThisKey="DVT" OtherKey="MaDVT" Type="DONVITINH" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.DONHANG_SANPHAM" Member="DONHANG_SANPHAMs">
@@ -41,6 +37,28 @@
       <Association Name="DONVITINH_SANPHAM" Member="SANPHAMs" ThisKey="MaDVT" OtherKey="DVT" Type="SANPHAM" />
     </Type>
   </Table>
+  <Table Name="dbo.HOADONBANHANG" Member="HOADONBANHANGs">
+    <Type Name="HOADONBANHANG">
+      <Column Name="MAHD" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="KHHD" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="MAKH" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="MANV" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="NGAYBAN" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="HOADONBANHANG_HOADONBANHANG_DONHANG" Member="HOADONBANHANG_DONHANGs" ThisKey="MAHD" OtherKey="MAHD" Type="HOADONBANHANG_DONHANG" />
+      <Association Name="KHACHHANG_HOADONBANHANG" Member="KHACHHANG" ThisKey="MAKH" OtherKey="MaKH" Type="KHACHHANG" IsForeignKey="true" />
+      <Association Name="NHANVIEN_HOADONBANHANG" Member="NHANVIEN" ThisKey="MANV" OtherKey="MaNv" Type="NHANVIEN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HOADONBANHANG_DONHANG" Member="HOADONBANHANG_DONHANGs">
+    <Type Name="HOADONBANHANG_DONHANG">
+      <Column Name="MAHD" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="KHHD" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MADH" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SOLUONG" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="DONHANG_HOADONBANHANG_DONHANG" Member="DONHANG" ThisKey="MADH" OtherKey="MaDH" Type="DONHANG" IsForeignKey="true" />
+      <Association Name="HOADONBANHANG_HOADONBANHANG_DONHANG" Member="HOADONBANHANG" ThisKey="MAHD" OtherKey="MAHD" Type="HOADONBANHANG" IsForeignKey="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.KHACHHANG" Member="KHACHHANGs">
     <Type Name="KHACHHANG">
       <Column Name="MaKH" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -48,6 +66,7 @@
       <Column Name="Diachi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
       <Column Name="SoDT" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Association Name="KHACHHANG_DONHANG" Member="DONHANGs" ThisKey="MaKH" OtherKey="KHACHHANG_FK" Type="DONHANG" />
+      <Association Name="KHACHHANG_HOADONBANHANG" Member="HOADONBANHANGs" ThisKey="MaKH" OtherKey="MAKH" Type="HOADONBANHANG" />
     </Type>
   </Table>
   <Table Name="dbo.NHACUNGCAP" Member="NHACUNGCAPs">
@@ -70,6 +89,7 @@
       <Column Name="diachi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
       <Column Name="MaTrinhDo" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Association Name="NHANVIEN_DONHANG" Member="DONHANGs" ThisKey="MaNv" OtherKey="NHANVIEN_FK" Type="DONHANG" />
+      <Association Name="NHANVIEN_HOADONBANHANG" Member="HOADONBANHANGs" ThisKey="MaNv" OtherKey="MANV" Type="HOADONBANHANG" />
       <Association Name="NHANVIEN_NHAPHANG" Member="NHAPHANGs" ThisKey="MaNv" OtherKey="Nhanvien_FK" Type="NHAPHANG" />
       <Association Name="TRINHDO_NHANVIEN" Member="TRINHDO" ThisKey="MaTrinhDo" OtherKey="MATRINHDO" Type="TRINHDO" IsForeignKey="true" />
     </Type>
@@ -100,11 +120,16 @@
       <Association Name="SANPHAM_NHAPHANG_SANPHAM" Member="SANPHAM" ThisKey="MaSP" OtherKey="MaSP" Type="SANPHAM" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.TRINHDO" Member="TRINHDOs">
-    <Type Name="TRINHDO">
-      <Column Name="MATRINHDO" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="TENTRINHDO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Association Name="TRINHDO_NHANVIEN" Member="NHANVIENs" ThisKey="MATRINHDO" OtherKey="MaTrinhDo" Type="NHANVIEN" />
+  <Table Name="dbo.SANPHAM" Member="SANPHAMs">
+    <Type Name="SANPHAM">
+      <Column Name="MaSP" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenSP" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="DVT" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="DONGIA_NHAP" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DONGIA_BAN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="SANPHAM_DONHANG_SANPHAM" Member="DONHANG_SANPHAMs" ThisKey="MaSP" OtherKey="MaSP" Type="DONHANG_SANPHAM" />
+      <Association Name="SANPHAM_NHAPHANG_SANPHAM" Member="NHAPHANG_SANPHAMs" ThisKey="MaSP" OtherKey="MaSP" Type="NHAPHANG_SANPHAM" />
+      <Association Name="DONVITINH_SANPHAM" Member="DONVITINH" ThisKey="DVT" OtherKey="MaDVT" Type="DONVITINH" IsForeignKey="true" />
     </Type>
   </Table>
   <Function Name="dbo.KiemTraMaDH" Method="KiemTraMaDH">
@@ -122,7 +147,7 @@
       <Column Name="DVT" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Column Name="NgayNhap" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="MaDH" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="NgayBan" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NgayBan" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="sl_nhap" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="sl_xuat" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="sl_ton" Type="System.Int32" DbType="Int" CanBeNull="true" />

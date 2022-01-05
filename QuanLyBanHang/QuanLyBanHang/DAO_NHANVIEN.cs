@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 
@@ -8,12 +9,42 @@ namespace QuanLyBanHang
 
     class DAO_NHANVIEN
     {
-        DataQuanLyBanHangDataContext db;
+        QLBHDataContext db;
         public DAO_NHANVIEN()
         {
-            db = new DataQuanLyBanHangDataContext();
+            db = new QLBHDataContext();
         }
-
+        public DataTable DSNV()//phải return vè dsNV
+        {
+            var dsNV = db.NHANVIENs.ToList();
+            DataTable dt = new DataTable();
+            dt.Columns.Add(new DataColumn("MaNv"));
+            dt.Columns.Add(new DataColumn("HoNv"));
+            dt.Columns.Add(new DataColumn("TenNV"));
+            dt.Columns.Add(new DataColumn("NgaySinh"));
+            dt.Columns.Add(new DataColumn("dienthoai"));
+            dt.Columns.Add(new DataColumn("CCCD"));
+            dt.Columns.Add(new DataColumn("diachi"));
+            dt.Columns.Add(new DataColumn("MaTrinhDo"));
+            if (dsNV != null && dsNV.Count > 0)
+            {
+                foreach (var kh in dsNV)
+                {
+                    DataRow dr = dt.NewRow();
+                    dr[0] = kh.MaNv;
+                    dr[1] = kh.HoNv;
+                    dr[2] = kh.TenNV;
+                    dr[3] = kh.NgaySinh;
+                    dr[4] = kh.dienthoai;
+                    dr[5] = kh.CCCD;
+                    dr[6] = kh.diachi;
+                    dr[7] = kh.MaTrinhDo;
+                    dt.Rows.Add(dr);
+                }
+                return dt;
+            }
+            return dt;
+        }
         public dynamic LayDSNhanVien()//phải return vè dsNV
         {
             dynamic dsNV = db.NHANVIENs.Select(s => new

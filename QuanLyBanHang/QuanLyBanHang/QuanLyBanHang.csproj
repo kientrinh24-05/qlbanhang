@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>QuanLyBanHang</RootNamespace>
     <AssemblyName>QuanLyBanHang</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -86,26 +86,24 @@
     <Compile Include="BUS_CHITIETBANHANG.cs" />
     <Compile Include="BUS_CHITIETPHIEUNHAP.cs" />
     <Compile Include="BUS_BANHANG.cs" />
+    <Compile Include="BUS_HOADONBANHANG.cs" />
     <Compile Include="BUS_KHACHHANG.cs" />
     <Compile Include="BUS_NCC.cs" />
     <Compile Include="BUS_NHANVIEN.cs" />
     <Compile Include="BUS_NHAPHANG.cs" />
     <Compile Include="BUS_SANPHAM.cs" />
     <Compile Include="BUS_TONKHO.cs" />
+    <Compile Include="CTHDDto.cs" />
     <Compile Include="DAO_BANHANG.cs" />
     <Compile Include="DAO_CHITIETBANHANG.cs" />
     <Compile Include="DAO_CHITIETPHIEUNHAP.cs" />
+    <Compile Include="DAO_HOADONBANHANG.cs" />
     <Compile Include="DAO_KHACHHANG.cs" />
     <Compile Include="DAO_NCC.cs" />
     <Compile Include="DAO_NHANVIEN.cs" />
     <Compile Include="DAO_NHAPHANG.CS" />
     <Compile Include="DAO_SANPHAM.cs" />
     <Compile Include="DAO_TONKHO.cs" />
-    <Compile Include="DataQuanLyBanHang.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataQuanLyBanHang.dbml</DependentUpon>
-    </Compile>
     <Compile Include="FBanHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +164,12 @@
     <Compile Include="FChitietDonHangBan.Designer.cs">
       <DependentUpon>FChitietDonHangBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="FSuaXoaHoaDonBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSuaXoaHoaDonBan.Designer.cs">
+      <DependentUpon>FSuaXoaHoaDonBan.cs</DependentUpon>
+    </Compile>
     <Compile Include="FTonKho.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,18 +184,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLBH.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBH.dbml</DependentUpon>
+    </Compile>
     <Compile Include="QUANLYBANHANGDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QUANLYBANHANGDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TTHOADONDto.cs" />
     <Compile Include="VBButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <None Include="app.config" />
-    <None Include="DataQuanLyBanHang.dbml.layout">
-      <DependentUpon>DataQuanLyBanHang.dbml</DependentUpon>
-    </None>
     <EmbeddedResource Include="FBanHang.resx">
       <DependentUpon>FBanHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -222,6 +229,9 @@
     <EmbeddedResource Include="FChitietDonHangBan.resx">
       <DependentUpon>FChitietDonHangBan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FSuaXoaHoaDonBan.resx">
+      <DependentUpon>FSuaXoaHoaDonBan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FTonKho.resx">
       <DependentUpon>FTonKho.cs</DependentUpon>
     </EmbeddedResource>
@@ -238,11 +248,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="DataQuanLyBanHang.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>DataQuanLyBanHang.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -287,6 +292,14 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="QLBH.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>QLBH.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLBH.dbml.layout">
+      <DependentUpon>QLBH.dbml</DependentUpon>
+    </None>
     <None Include="QUANLYBANHANGDataSet.xsc">
       <DependentUpon>QUANLYBANHANGDataSet.xsd</DependentUpon>
     </None>

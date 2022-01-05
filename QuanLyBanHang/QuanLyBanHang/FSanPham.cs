@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClosedXML.Excel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -219,6 +220,37 @@ namespace QuanLyBanHang
             {
                 e.Handled = true;
             }
+        }
+
+        private void Export_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
+            {
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        using (XLWorkbook workbook = new XLWorkbook())
+                        {
+                            workbook.Worksheets.Add(busSP.DSSP(), "DSNhanVien");
+                            workbook.SaveAs(sfd.FileName);
+                        }
+                        MessageBox.Show("You have successfully exported", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
+
+        private void Import_Click(object sender, EventArgs e)
+        {
+            string url = "sanpham";
+            FImport import = new FImport(url);
+            this.Hide();
+            import.ShowDialog();
         }
     }
 }

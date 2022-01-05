@@ -75,12 +75,8 @@ namespace QuanLyBanHang
 
         public void SuaCTPN(DONHANG_SANPHAM DH)
         {
-
             if (!daCT.SuaCTDH(DH))
                 MessageBox.Show("That bai");
-
-
-
         }
 
 

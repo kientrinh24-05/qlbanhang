@@ -64,6 +64,8 @@
             this.quảnLýĐơnHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.Import = new CustomButton.VBButton();
+            this.Export = new CustomButton.VBButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -204,6 +206,8 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bindingNavigatorPositionItem.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -348,6 +352,7 @@
             this.dGNCC.Location = new System.Drawing.Point(12, 28);
             this.dGNCC.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.dGNCC.Name = "dGNCC";
+            this.dGNCC.RowHeadersWidth = 62;
             this.dGNCC.RowTemplate.Height = 24;
             this.dGNCC.Size = new System.Drawing.Size(982, 289);
             this.dGNCC.TabIndex = 0;
@@ -356,6 +361,7 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.Controls.Add(this.Export);
             this.groupBox4.Controls.Add(this.label7);
             this.groupBox4.Controls.Add(this.txtTimKiem);
             this.groupBox4.Controls.Add(this.btnNhapLai);
@@ -426,6 +432,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.quảnLýSảnPhẩmToolStripMenuItem,
@@ -448,33 +455,33 @@
             this.quảnLýSảnPhẩmToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.quảnLýSảnPhẩmToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
             this.quảnLýSảnPhẩmToolStripMenuItem.Name = "quảnLýSảnPhẩmToolStripMenuItem";
-            this.quảnLýSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(187, 36);
+            this.quảnLýSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(191, 36);
             this.quảnLýSảnPhẩmToolStripMenuItem.Text = "Dữ Liệu Cơ Sở";
             // 
             // quảnLýNhânViênToolStripMenuItem
             // 
             this.quảnLýNhânViênToolStripMenuItem.Name = "quảnLýNhânViênToolStripMenuItem";
-            this.quảnLýNhânViênToolStripMenuItem.Size = new System.Drawing.Size(364, 36);
+            this.quảnLýNhânViênToolStripMenuItem.Size = new System.Drawing.Size(382, 40);
             this.quảnLýNhânViênToolStripMenuItem.Text = "Quản Lý Nhân Viên";
             this.quảnLýNhânViênToolStripMenuItem.Click += new System.EventHandler(this.quảnLýNhânViênToolStripMenuItem_Click);
             // 
             // quảnLýKháchHàngToolStripMenuItem
             // 
             this.quảnLýKháchHàngToolStripMenuItem.Name = "quảnLýKháchHàngToolStripMenuItem";
-            this.quảnLýKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(364, 36);
+            this.quảnLýKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(382, 40);
             this.quảnLýKháchHàngToolStripMenuItem.Text = "Quản Lý Khách Hàng";
             this.quảnLýKháchHàngToolStripMenuItem.Click += new System.EventHandler(this.quảnLýKháchHàngToolStripMenuItem_Click);
             // 
             // quảnLýNhàCungCấpToolStripMenuItem
             // 
             this.quảnLýNhàCungCấpToolStripMenuItem.Name = "quảnLýNhàCungCấpToolStripMenuItem";
-            this.quảnLýNhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(364, 36);
+            this.quảnLýNhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(382, 40);
             this.quảnLýNhàCungCấpToolStripMenuItem.Text = "Quản Lý Nhà Cung Cấp";
             // 
             // quảnLýSảnPhẩmToolStripMenuItem1
             // 
             this.quảnLýSảnPhẩmToolStripMenuItem1.Name = "quảnLýSảnPhẩmToolStripMenuItem1";
-            this.quảnLýSảnPhẩmToolStripMenuItem1.Size = new System.Drawing.Size(364, 36);
+            this.quảnLýSảnPhẩmToolStripMenuItem1.Size = new System.Drawing.Size(382, 40);
             this.quảnLýSảnPhẩmToolStripMenuItem1.Text = "Quản Lý Sản Phẩm";
             this.quảnLýSảnPhẩmToolStripMenuItem1.Click += new System.EventHandler(this.quảnLýSảnPhẩmToolStripMenuItem1_Click);
             // 
@@ -483,7 +490,7 @@
             this.quảnLýĐơnHàngToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.quảnLýĐơnHàngToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
             this.quảnLýĐơnHàngToolStripMenuItem.Name = "quảnLýĐơnHàngToolStripMenuItem";
-            this.quảnLýĐơnHàngToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
+            this.quảnLýĐơnHàngToolStripMenuItem.Size = new System.Drawing.Size(247, 36);
             this.quảnLýĐơnHàngToolStripMenuItem.Text = "Quản lý nhập hàng";
             this.quảnLýĐơnHàngToolStripMenuItem.Click += new System.EventHandler(this.quảnLýĐơnHàngToolStripMenuItem_Click);
             // 
@@ -492,7 +499,7 @@
             this.toolStripMenuItem2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.toolStripMenuItem2.ForeColor = System.Drawing.Color.Blue;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(229, 36);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(233, 36);
             this.toolStripMenuItem2.Text = "Quản lý bán hàng";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
@@ -501,9 +508,47 @@
             this.toolStripMenuItem3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.toolStripMenuItem3.ForeColor = System.Drawing.Color.Blue;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(223, 36);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(227, 36);
             this.toolStripMenuItem3.Text = "Báo Cáo Tồn Kho";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
+            // 
+            // Import
+            // 
+            this.Import.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.Import.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.Import.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.Import.BorderRadius = 20;
+            this.Import.BorderSize = 0;
+            this.Import.FlatAppearance.BorderSize = 0;
+            this.Import.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Import.ForeColor = System.Drawing.Color.White;
+            this.Import.Location = new System.Drawing.Point(1026, 273);
+            this.Import.Name = "Import";
+            this.Import.Size = new System.Drawing.Size(108, 40);
+            this.Import.TabIndex = 32;
+            this.Import.Text = "Import";
+            this.Import.TextColor = System.Drawing.Color.White;
+            this.Import.UseVisualStyleBackColor = false;
+            this.Import.Click += new System.EventHandler(this.Import_Click);
+            // 
+            // Export
+            // 
+            this.Export.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.Export.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.Export.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.Export.BorderRadius = 20;
+            this.Export.BorderSize = 0;
+            this.Export.FlatAppearance.BorderSize = 0;
+            this.Export.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Export.ForeColor = System.Drawing.Color.White;
+            this.Export.Location = new System.Drawing.Point(158, 72);
+            this.Export.Name = "Export";
+            this.Export.Size = new System.Drawing.Size(108, 40);
+            this.Export.TabIndex = 33;
+            this.Export.Text = "Export";
+            this.Export.TextColor = System.Drawing.Color.White;
+            this.Export.UseVisualStyleBackColor = false;
+            this.Export.Click += new System.EventHandler(this.Export_Click);
             // 
             // FNhaCungCap
             // 
@@ -512,6 +557,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1146, 811);
+            this.Controls.Add(this.Import);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -580,5 +626,7 @@
         private CustomButton.VBButton btThem;
         private CustomButton.VBButton btnNhapLai;
         private CustomButton.VBButton btnTimKiem;
+        private CustomButton.VBButton Import;
+        private CustomButton.VBButton Export;
     }
 }

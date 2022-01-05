@@ -184,20 +184,20 @@ namespace QuanLyBanHang
         private void cbSanPham_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            if (cbSanPham.SelectedIndex <= -1)
-                return;
-            BUS_SANPHAM bus = new BUS_SANPHAM();
-            string spSelected = cbSanPham.SelectedValue.ToString();
-            try
-            {
-                SANPHAM sp = bus.GetByID(spSelected);
-                txtDonGia.Text = sp.DONGIA_BAN.ToString();
-                txtDVT.Text = sp.DVT.ToString();
-            }
-            catch
-            {
+            //if (cbSanPham.SelectedIndex <= -1)
+            //    return;
+            //BUS_SANPHAM bus = new BUS_SANPHAM();
+            //string spSelected = cbSanPham.SelectedValue.ToString();
+            //try
+            //{
+            //    SANPHAM sp = bus.GetByID(spSelected);
+            //    txtDonGia.Text = sp.DONGIA_BAN.ToString();
+            //    txtDVT.Text = sp.DVT.ToString();
+            //}
+            //catch
+            //{
 
-            }
+            //}
         }
 
         private void dGSP_CellClick(object sender, DataGridViewCellEventArgs e)

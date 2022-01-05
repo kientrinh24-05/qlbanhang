@@ -8,10 +8,10 @@ namespace QuanLyBanHang
 {
     class DAO_KHACHHANG
     {
-        DataQuanLyBanHangDataContext db;
+        QLBHDataContext db;
         public DAO_KHACHHANG()
         {
-            db = new DataQuanLyBanHangDataContext();
+            db = new QLBHDataContext();
         }
 
         public DataTable DSKhachHang()//phải return vè dsNV
