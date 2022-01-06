@@ -64,7 +64,6 @@
             this.btnSua = new CustomButton.VBButton();
             this.btThoat = new CustomButton.VBButton();
             this.btThem = new CustomButton.VBButton();
-            this.btXoa = new CustomButton.VBButton();
             this.qUANLYBANHANGDataSet = new QuanLyBanHang.QUANLYBANHANGDataSet();
             this.qUANLYBANHANGDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
@@ -418,7 +417,6 @@
             this.groupBox4.Controls.Add(this.btnSua);
             this.groupBox4.Controls.Add(this.btThoat);
             this.groupBox4.Controls.Add(this.btThem);
-            this.groupBox4.Controls.Add(this.btXoa);
             this.groupBox4.Location = new System.Drawing.Point(47, 791);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox4.Name = "groupBox4";
@@ -459,7 +457,7 @@
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(112, 89);
             this.btnSua.TabIndex = 5;
-            this.btnSua.Text = "Sửa";
+            this.btnSua.Text = "Cập nhật hóa đơn";
             this.btnSua.TextColor = System.Drawing.Color.White;
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
@@ -481,6 +479,7 @@
             this.btThoat.Text = "Thoát";
             this.btThoat.TextColor = System.Drawing.Color.White;
             this.btThoat.UseVisualStyleBackColor = true;
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
             // btThem
             // 
@@ -500,24 +499,6 @@
             this.btThem.TextColor = System.Drawing.Color.White;
             this.btThem.UseVisualStyleBackColor = true;
             this.btThem.Click += new System.EventHandler(this.btThem_Click);
-            // 
-            // btXoa
-            // 
-            this.btXoa.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btXoa.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btXoa.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btXoa.BorderRadius = 20;
-            this.btXoa.BorderSize = 0;
-            this.btXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btXoa.ForeColor = System.Drawing.Color.White;
-            this.btXoa.Location = new System.Drawing.Point(138, 29);
-            this.btXoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(112, 89);
-            this.btXoa.TabIndex = 1;
-            this.btXoa.Text = "Xóa";
-            this.btXoa.TextColor = System.Drawing.Color.White;
-            this.btXoa.UseVisualStyleBackColor = true;
             // 
             // qUANLYBANHANGDataSet
             // 
@@ -595,7 +576,6 @@
         private CustomButton.VBButton btnSua;
         private CustomButton.VBButton btThoat;
         private CustomButton.VBButton btThem;
-        private CustomButton.VBButton btXoa;
         private System.Windows.Forms.NumericUpDown nbSoluong;
         private System.Windows.Forms.Button btnThem;
         private QUANLYBANHANGDataSet qUANLYBANHANGDataSet;

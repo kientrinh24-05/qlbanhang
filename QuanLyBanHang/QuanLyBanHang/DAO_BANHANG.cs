@@ -16,7 +16,7 @@ namespace QuanLyBanHang
 
         public dynamic LayDSDonHang()
         {
-            dynamic dsDonHang = db.DONHANGs.Select(s => new
+            dynamic dsDonHang = db.DONHANGs.Where(s=> s.status).Select(s => new
             {
                 s.MaDH,
                 s.NgayBan,
@@ -84,6 +84,7 @@ namespace QuanLyBanHang
                                                 || s.NHANVIEN_FK.Contains(DonHang)
                                                 || s.KHACHHANG_FK.Contains(DonHang)
                                                 || s.NgayBan.Contains(DonHang)
+                                                && s.status
                                                 )
                                         .Select(s => new
                                         {

@@ -41,6 +41,7 @@ namespace QuanLyBanHang
                 NH.NHANVIEN_FK = cbNhanVien.SelectedValue.ToString();
                 NH.KHACHHANG_FK = cbKH.SelectedValue.ToString();
                 NH.NgayBan = dtpNgayBan.Value.ToString("MM/dd/yyyy");
+                NH.status = true;
                 busBanHang.ThemDonHang(NH);
                 busBanHang.DSDonHang(dGBanHang);
             }

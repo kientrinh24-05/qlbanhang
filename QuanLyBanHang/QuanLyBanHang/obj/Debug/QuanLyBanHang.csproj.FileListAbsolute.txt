@@ -311,3 +311,5 @@ C:\Users\Admin\Downloads\qlbanhang\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microso
 C:\Users\Admin\Downloads\qlbanhang\QuanLyBanHang\QuanLyBanHang\bin\Debug\Microsoft.Build.Utilities.v3.5.xml
 C:\Users\Admin\Downloads\qlbanhang\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CopyComplete
 C:\Users\Admin\Downloads\qlbanhang\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FSuaXoaHoaDonBan.resources
+C:\Users\Admin\Downloads\qlbanhang\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FHoadonNhap.resources
+C:\Users\Admin\Downloads\qlbanhang\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FSuaXoaHoaDonNhap.resources

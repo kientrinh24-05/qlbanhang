@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace QuanLyBanHang
 {
-    public partial class FSuaXoaHoaDonBan : Form
+    public partial class FSuaXoaHoaDonNhap : Form
     {
-        BUS_HOADONBANHANG bushdBanHang;
-        public FSuaXoaHoaDonBan()
+        BUS_HOADONNHAPHANG bushdNhapHang;
+        public FSuaXoaHoaDonNhap()
         {
             InitializeComponent();
-            bushdBanHang = new BUS_HOADONBANHANG();
+            bushdNhapHang = new BUS_HOADONNHAPHANG();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -24,65 +24,65 @@ namespace QuanLyBanHang
 
         }
 
-        private void FSuaXoaHoaDonBan_Load(object sender, EventArgs e)
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
-            bushdBanHang.LayMaHoaDon(cbbMaHD);
-            //bushdBanHang.LayMaKHHD(cbbKHHD);
+
+        }
+
+        private void FSuaXoaHoaDonNhap_Load(object sender, EventArgs e)
+        {
+            bushdNhapHang.LayMaHoaDon(cbbMaHD);
         }
 
         private void cbbMaHD_SelectedIndexChanged(object sender, EventArgs e)
         {
             string mahd = cbbMaHD.SelectedItem as string;
-            bushdBanHang.LayMaKHHD(mahd, cbbKHHD);
-            var thongtin = bushdBanHang.LayThongTin(mahd, cbbKHHD.SelectedValue.ToString());
+            bushdNhapHang.LayMaKHHD(mahd, cbbKHHD);
+            var thongtin = bushdNhapHang.LayThongTin(mahd, cbbKHHD.SelectedValue.ToString());
             NgayBan.Value = thongtin.NgayBan;
             txtMaNV.Text = thongtin.MANV;
             txtTenNV.Text = thongtin.TenNV;
-            txtMaKH.Text = thongtin.MAKH.ToString();
-            txtTenKH.Text = thongtin.TenKH;
+            txtMaNCC.Text = thongtin.MANCC.ToString();
+            txtTenNCC.Text = thongtin.TenNCC;
             txtSDT.Text = thongtin.SDT;
             txtDiachi.Text = thongtin.DiaChi;
         }
 
         private void cbbKHHD_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string kh = cbbKHHD.SelectedItem as string;  
-            var thongtin = bushdBanHang.LayThongTin(cbbMaHD.SelectedValue.ToString(), kh);
-            if(thongtin!=null)
+            string kh = cbbKHHD.SelectedItem as string;
+            var thongtin = bushdNhapHang.LayThongTin(cbbMaHD.SelectedValue.ToString(), kh);
+            if (thongtin != null)
             {
                 NgayBan.Value = thongtin.NgayBan;
                 txtMaNV.Text = thongtin.MANV;
                 txtTenNV.Text = thongtin.TenNV;
-                txtMaKH.Text = thongtin.MAKH.ToString();
-                txtTenKH.Text = thongtin.TenKH;
+                txtMaNCC.Text = thongtin.MANCC.ToString();
+                txtTenNCC.Text = thongtin.TenNCC;
                 txtSDT.Text = thongtin.SDT;
                 txtDiachi.Text = thongtin.DiaChi;
-            }    
+            }
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            HOADONBANHANG hd = new HOADONBANHANG()
+            HOADONNHAPHANG hd = new HOADONNHAPHANG()
             {
                 MAHD = cbbMaHD.SelectedValue.ToString(),
                 KHHD = cbbKHHD.SelectedValue.ToString(),
-                NGAYBAN = NgayBan.Value,
+                NGAYNHAP = NgayBan.Value,
             };
-            
-            var check=  bushdBanHang.SuaHoaDon(hd);
-            if(check)
+
+            var check = bushdNhapHang.SuaHoaDon(hd);
+            if (check)
             {
                 MessageBox.Show("Sửa thành công", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            //else
-            //{
-            //    MessageBox.Show("Sửa không thành công", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}   
         }
 
         private void btXoa_Click(object sender, EventArgs e)
         {
-            var check = bushdBanHang.XoaDonHang(cbbMaHD.SelectedValue.ToString(), cbbKHHD.SelectedValue.ToString());
+            var check = bushdNhapHang.XoaDonHang(cbbMaHD.SelectedValue.ToString(), cbbKHHD.SelectedValue.ToString());
             if (check)
             {
                 MessageBox.Show("Xóa thành công", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -94,7 +94,7 @@ namespace QuanLyBanHang
             DialogResult dlr = MessageBox.Show("Bạn muốn thoát khỏi giao diện này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dlr == DialogResult.Yes)
             {
-                FHoadonban hd = new FHoadonban();
+                FHoadonNhap hd = new FHoadonNhap();
                 this.Hide();
                 hd.ShowDialog();
             }

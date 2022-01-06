@@ -109,12 +109,16 @@ namespace QuanLyBanHang
             if (cbTest.SelectedIndex <= -1)
                 return;
             BUS_SANPHAM bus = new BUS_SANPHAM();
-            string spSelected = cbTest.SelectedValue.ToString();
+            string spSelected = cbTest.SelectedItem as string; 
             try
             {
                 SANPHAM sp = bus.GetByID(spSelected);
-                txtDonGia.Text = sp.DONGIA_NHAP.ToString();
-                txtDVT.Text = sp.DVT.ToString();
+                if(sp!=null)
+                {
+                    txtDonGia.Text = sp.DONGIA_NHAP.ToString();
+                    txtDVT.Text = sp.DVT.ToString();
+                }    
+                
             }
             catch
             {

@@ -41,7 +41,7 @@ namespace QuanLyBanHang
         public IList<string> LayDSDONHANG(string maKH, DateTime ngayBan)
         {
             var ds = db.DONHANGs
-                .Where(k => k.KHACHHANG_FK == maKH && Convert.ToDateTime(k.NgayBan) <= ngayBan)
+                .Where(k => k.KHACHHANG_FK == maKH && Convert.ToDateTime(k.NgayBan) <= ngayBan && k.status)
                 .Select(k=> k.MaDH).ToList();
             return ds;
         }
@@ -56,6 +56,15 @@ namespace QuanLyBanHang
                 {
                     db.HOADONBANHANG_DONHANGs.InsertOnSubmit(hdbh_dh);
                 }    
+                db.SubmitChanges();
+                foreach(var madh in hdbh_dhs.Select(c=> c.MADH).Distinct())
+                {
+                    var dh = db.DONHANGs.Where(c => c.MaDH == madh).FirstOrDefault();
+                    if(dh!=null)
+                    {
+                        dh.status = false;
+                    }    
+                }
                 db.SubmitChanges();
                 trangthai = true;
             }
@@ -88,7 +97,6 @@ namespace QuanLyBanHang
             if(ctHoaDons.Count!=0)
             {
                 string check= null;
-                int a = ctHoaDons.Select(c => c.MaDH).Distinct().Count();
                 foreach(var sp in ctHoaDons.Select(c => c.MaDH).Distinct().ToList())
                 {
                     if (sp == maDH)

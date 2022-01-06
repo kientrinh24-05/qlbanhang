@@ -16,7 +16,7 @@ namespace QuanLyBanHang
 
         public dynamic LayDSDonNhap()
         {
-            dynamic dsNhapHang = db.NHAPHANGs.Select(s => new
+            dynamic dsNhapHang = db.NHAPHANGs.Where(s=> s.status).Select(s => new
             {
                 s.MaPN,
                 s.NgayNhap,
@@ -84,6 +84,7 @@ namespace QuanLyBanHang
                                                 || s.Nhanvien_FK.Contains(DonNhap)
                                                 || s.NCC_FK.Contains(DonNhap)
                                                 || s.NgayNhap.Contains(DonNhap)
+                                                && s.status
                                                 )
                                         .Select(s => new
                                         {

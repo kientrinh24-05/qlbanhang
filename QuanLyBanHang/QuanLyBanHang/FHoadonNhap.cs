@@ -10,22 +10,20 @@ using System.Windows.Forms;
 
 namespace QuanLyBanHang
 {
-    public partial class FHoadonban : Form
+    public partial class FHoadonNhap : Form
     {
-        BUS_HOADONBANHANG bushdBanHang;
-        public FHoadonban()
+        BUS_HOADONNHAPHANG bushdNhapHang;
+        public FHoadonNhap()
         {
             InitializeComponent();
-            bushdBanHang = new BUS_HOADONBANHANG();
+            bushdNhapHang = new BUS_HOADONNHAPHANG();
         }
 
-       
-        private void FHoadonban_Load(object sender, EventArgs e)
+        private void FHoadonNhap_Load(object sender, EventArgs e)
         {
             txtTongTien.Enabled = false;
-            bushdBanHang.DSMAKH(maKH);
-            bushdBanHang.DSMANV(cbboxmanv);
-            //bushdBanHang.DSDONHANG(maKH.SelectedValue.ToString(), NgayBan.Value, cbbDH);
+            bushdNhapHang.DSMANCC(maNCC);
+            bushdNhapHang.DSMANV(cbboxmanv);
         }
 
         private void cbboxmanv_SelectedIndexChanged(object sender, EventArgs e)
@@ -34,23 +32,27 @@ namespace QuanLyBanHang
             txtTenNV.Text = nv.TenNV;
         }
 
-        private void maKH_SelectedIndexChanged(object sender, EventArgs e)
+        private void maNCC_SelectedIndexChanged(object sender, EventArgs e)
         {
             ComboBox cb = sender as ComboBox;
             if (cb.SelectedItem == null)
             {
                 return;
             }
-            KHACHHANG kh = maKH.SelectedItem as KHACHHANG;
-            txtTenKH.Text = kh.TenKH;
+            NHACUNGCAP kh = maNCC.SelectedItem as NHACUNGCAP;
+            txtTenNCC.Text = kh.TenNCC;
             txtDiachi.Text = kh.Diachi;
             txtSDT.Text = kh.SoDT;
-            bushdBanHang.DSDONHANG(kh.MaKH, NgayBan.Value, cbbDH);
+            bushdNhapHang.DSNHAPHANG(kh.MaNCC, NgayBan.Value, cbbDH);
         }
 
+        List<CTHDNHAPDto> cthds = new List<CTHDNHAPDto>();
         private void btnThem_Click(object sender, EventArgs e)
         {
-            //bushdBanHang.ThemCTHD(cbbDH.SelectedValue.ToString(), (int)nbSoluong.Value, dGHDBH);
+            cthds = bushdNhapHang.ThemCTHD(cbbDH.SelectedValue.ToString(), (int)nbSoluong.Value);
+
+            dGHDBH.DataSource = cthds.Select(c => new { c.MaSP, c.TenSP, c.Soluong, c.ThanhTien }).ToList();
+            txtTongTien.Text = (cthds.Sum(c => c.ThanhTien) != null ? cthds.Sum(c => c.ThanhTien) : 0).ToString();
         }
 
         private void btThem_Click(object sender, EventArgs e)
@@ -58,49 +60,52 @@ namespace QuanLyBanHang
             if (txtMaHD.Text == "" && txtMaHD.Text == "")
             {
                 MessageBox.Show("Nhập Mã hóa đơn và kí hiệu hóa đơn", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }else if (txtMaHD.Text== "")
+            }
+            else if (txtMaHD.Text == "")
             {
                 MessageBox.Show("Nhập Mã hóa đơn", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }else if (txtKHHD.Text == "")
+            }
+            else if (txtKHHD.Text == "")
             {
                 MessageBox.Show("Nhập kí hiệu hóa đơn", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }else
+            }
+            else
             {
                 if (cthds.Count != 0)
                 {
-                    HOADONBANHANG dh = new HOADONBANHANG()
+                    HOADONNHAPHANG dh = new HOADONNHAPHANG()
                     {
                         MAHD = txtMaHD.Text,
                         KHHD = txtKHHD.Text,
-                        MAKH = maKH.SelectedValue.ToString(),
+                        MANCC = maNCC.SelectedValue.ToString(),
                         MANV = cbboxmanv.SelectedValue.ToString(),
-                        NGAYBAN = NgayBan.Value
+                        NGAYNHAP = NgayBan.Value
                     };
-                    List<HOADONBANHANG_DONHANG> hddhs = new List<HOADONBANHANG_DONHANG>();
+                    List<HOADONNHAPHANG_NHAPHANG> hddhs = new List<HOADONNHAPHANG_NHAPHANG>();
 
-                    foreach(var cthd in cthds)
+                    foreach (var cthd in cthds)
                     {
                         int check = 0;
-                        foreach(var hd in hddhs)
+                        foreach (var hd in hddhs)
                         {
-                            if(hd.MADH== cthd.MaDH)
+                            if (hd.MAPN == cthd.MaPN)
                             {
                                 check = 1;
-                            }    
+                            }
                         }
-                        if(check==0)
+                        if (check == 0)
                         {
-                            HOADONBANHANG_DONHANG hddh = new HOADONBANHANG_DONHANG()
+                            HOADONNHAPHANG_NHAPHANG hddh = new HOADONNHAPHANG_NHAPHANG()
                             {
                                 MAHD = txtMaHD.Text,
                                 KHHD = txtKHHD.Text,
-                                MADH = cthd.MaDH,
-                                SOLUONG = bushdBanHang.TongSoluong(cthd.Soluong, cthd.MaDH)
+                                MAPN = cthd.MaPN,
+                                SOLUONG = bushdNhapHang.TongSoluong(cthd.Soluong, cthd.MaPN)
                             };
                             hddhs.Add(hddh);
-                        }    
-                    }    
-                    bushdBanHang.ThemHD(dh, hddhs);
+                        }
+                    }
+                    bushdNhapHang.ThemHD(dh, hddhs);
                     MessageBox.Show("Bạn hóa đơn thành công", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
@@ -108,32 +113,13 @@ namespace QuanLyBanHang
                     MessageBox.Show("Bạn chưa nhập chi tiết hóa đơn", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-           
-            
-        }
-        List<CTHDDto> cthds = new List<CTHDDto>();
-        private void btnThem_Click_1(object sender, EventArgs e)
-        {
-            cthds= bushdBanHang.ThemCTHD(cbbDH.SelectedValue.ToString(), (int)nbSoluong.Value);
-
-            dGHDBH.DataSource = cthds.Select(c=> new { c.MaSP, c.TenSP, c.Soluong, c.ThanhTien}).ToList();
-            txtTongTien.Text = (cthds.Sum(c => c.ThanhTien)!=null? cthds.Sum(c => c.ThanhTien): 0).ToString();
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            FSuaXoaHoaDonBan hd = new FSuaXoaHoaDonBan();
+            FSuaXoaHoaDonNhap hd = new FSuaXoaHoaDonNhap();
             this.Hide();
             hd.ShowDialog();
-        }
-
-        private void btThoat_Click(object sender, EventArgs e)
-        {
-            DialogResult dlr = MessageBox.Show("Bạn muốn thoát khỏi giao diện này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dlr == DialogResult.Yes)
-            {
-                this.Close();
-            }
         }
     }
 }

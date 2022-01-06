@@ -15,7 +15,7 @@ namespace QuanLyBanHang
 
         public dynamic LayDSSP()
         {
-            var ds = db.SANPHAMs.Select(k => new { k.MaSP, k.TenSP });
+            var ds = db.SANPHAMs.ToList();
             return ds;
         }
 
