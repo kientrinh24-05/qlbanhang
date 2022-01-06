@@ -313,3 +313,4 @@ C:\Users\Admin\Downloads\qlbanhang\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyB
 C:\Users\Admin\Downloads\qlbanhang\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FSuaXoaHoaDonBan.resources
 C:\Users\Admin\Downloads\qlbanhang\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FHoadonNhap.resources
 C:\Users\Admin\Downloads\qlbanhang\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FSuaXoaHoaDonNhap.resources
+C:\Users\Admin\Downloads\qlbanhang\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.FDanhSachHoaDon.resources

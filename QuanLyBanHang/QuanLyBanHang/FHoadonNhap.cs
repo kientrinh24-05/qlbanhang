@@ -86,9 +86,9 @@ namespace QuanLyBanHang
                     foreach (var cthd in cthds)
                     {
                         int check = 0;
-                        foreach (var hd in hddhs)
+                        foreach (var hd1 in hddhs)
                         {
-                            if (hd.MAPN == cthd.MaPN)
+                            if (hd1.MAPN == cthd.MaPN)
                             {
                                 check = 1;
                             }
@@ -107,6 +107,10 @@ namespace QuanLyBanHang
                     }
                     bushdNhapHang.ThemHD(dh, hddhs);
                     MessageBox.Show("Bạn hóa đơn thành công", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    string url = "nhap";
+                    FDanhSachHoaDon hd = new FDanhSachHoaDon(url);
+                    this.Hide();
+                    hd.ShowDialog();
                 }
                 else
                 {

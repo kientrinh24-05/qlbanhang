@@ -77,5 +77,20 @@ namespace QuanLyBanHang
             f.ShowDialog();
             this.Close();
         }
+
+        private void vbButton2_Click(object sender, EventArgs e)
+        {
+           // string url = "khachhang";
+            FHoadonban import = new FHoadonban();
+            this.Hide();
+            import.ShowDialog();
+        }
+
+        private void vbButton1_Click(object sender, EventArgs e)
+        {
+            FHoadonNhap import = new FHoadonNhap();
+            this.Hide();
+            import.ShowDialog();
+        }
     }
 }

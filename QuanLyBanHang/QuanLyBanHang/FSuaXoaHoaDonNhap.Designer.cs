@@ -30,6 +30,10 @@ namespace QuanLyBanHang
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtMaNCC = new System.Windows.Forms.TextBox();
+            this.txtMaNV = new System.Windows.Forms.TextBox();
+            this.cbbKHHD = new System.Windows.Forms.ComboBox();
+            this.cbbMaHD = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.NgayBan = new System.Windows.Forms.DateTimePicker();
@@ -48,11 +52,13 @@ namespace QuanLyBanHang
             this.btThoat = new CustomButton.VBButton();
             this.btnSua = new CustomButton.VBButton();
             this.btXoa = new CustomButton.VBButton();
-            this.cbbMaHD = new System.Windows.Forms.ComboBox();
-            this.cbbKHHD = new System.Windows.Forms.ComboBox();
-            this.txtMaNV = new System.Windows.Forms.TextBox();
-            this.txtMaNCC = new System.Windows.Forms.TextBox();
+            this.txtTongTien = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dGHDBH = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dGHDBH)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -80,11 +86,47 @@ namespace QuanLyBanHang
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(1029, 279);
+            this.groupBox1.Size = new System.Drawing.Size(1029, 253);
             this.groupBox1.TabIndex = 39;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chi tiết";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // txtMaNCC
+            // 
+            this.txtMaNCC.Enabled = false;
+            this.txtMaNCC.Location = new System.Drawing.Point(674, 32);
+            this.txtMaNCC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtMaNCC.Name = "txtMaNCC";
+            this.txtMaNCC.Size = new System.Drawing.Size(298, 26);
+            this.txtMaNCC.TabIndex = 38;
+            // 
+            // txtMaNV
+            // 
+            this.txtMaNV.Enabled = false;
+            this.txtMaNV.Location = new System.Drawing.Point(186, 155);
+            this.txtMaNV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtMaNV.Name = "txtMaNV";
+            this.txtMaNV.Size = new System.Drawing.Size(298, 26);
+            this.txtMaNV.TabIndex = 37;
+            // 
+            // cbbKHHD
+            // 
+            this.cbbKHHD.FormattingEnabled = true;
+            this.cbbKHHD.Location = new System.Drawing.Point(186, 73);
+            this.cbbKHHD.Name = "cbbKHHD";
+            this.cbbKHHD.Size = new System.Drawing.Size(298, 28);
+            this.cbbKHHD.TabIndex = 32;
+            this.cbbKHHD.SelectedIndexChanged += new System.EventHandler(this.cbbKHHD_SelectedIndexChanged);
+            // 
+            // cbbMaHD
+            // 
+            this.cbbMaHD.FormattingEnabled = true;
+            this.cbbMaHD.Location = new System.Drawing.Point(186, 32);
+            this.cbbMaHD.Name = "cbbMaHD";
+            this.cbbMaHD.Size = new System.Drawing.Size(298, 28);
+            this.cbbMaHD.TabIndex = 31;
+            this.cbbMaHD.SelectedIndexChanged += new System.EventHandler(this.cbbMaHD_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -245,7 +287,7 @@ namespace QuanLyBanHang
             this.btThoat.BorderSize = 0;
             this.btThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btThoat.ForeColor = System.Drawing.Color.White;
-            this.btThoat.Location = new System.Drawing.Point(628, 415);
+            this.btThoat.Location = new System.Drawing.Point(673, 725);
             this.btThoat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btThoat.Name = "btThoat";
             this.btThoat.Size = new System.Drawing.Size(112, 89);
@@ -264,7 +306,7 @@ namespace QuanLyBanHang
             this.btnSua.BorderSize = 0;
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Location = new System.Drawing.Point(369, 415);
+            this.btnSua.Location = new System.Drawing.Point(414, 725);
             this.btnSua.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(112, 89);
@@ -283,7 +325,7 @@ namespace QuanLyBanHang
             this.btXoa.BorderSize = 0;
             this.btXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btXoa.ForeColor = System.Drawing.Color.White;
-            this.btXoa.Location = new System.Drawing.Point(490, 415);
+            this.btXoa.Location = new System.Drawing.Point(535, 725);
             this.btXoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(112, 89);
@@ -293,47 +335,57 @@ namespace QuanLyBanHang
             this.btXoa.UseVisualStyleBackColor = true;
             this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
-            // cbbMaHD
+            // txtTongTien
             // 
-            this.cbbMaHD.FormattingEnabled = true;
-            this.cbbMaHD.Location = new System.Drawing.Point(186, 32);
-            this.cbbMaHD.Name = "cbbMaHD";
-            this.cbbMaHD.Size = new System.Drawing.Size(298, 28);
-            this.cbbMaHD.TabIndex = 31;
-            this.cbbMaHD.SelectedIndexChanged += new System.EventHandler(this.cbbMaHD_SelectedIndexChanged);
+            this.txtTongTien.Location = new System.Drawing.Point(805, 658);
+            this.txtTongTien.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtTongTien.Name = "txtTongTien";
+            this.txtTongTien.Size = new System.Drawing.Size(234, 26);
+            this.txtTongTien.TabIndex = 45;
+            this.txtTongTien.TextChanged += new System.EventHandler(this.txtTongTien_TextChanged);
             // 
-            // cbbKHHD
+            // label9
             // 
-            this.cbbKHHD.FormattingEnabled = true;
-            this.cbbKHHD.Location = new System.Drawing.Point(186, 73);
-            this.cbbKHHD.Name = "cbbKHHD";
-            this.cbbKHHD.Size = new System.Drawing.Size(298, 28);
-            this.cbbKHHD.TabIndex = 32;
-            this.cbbKHHD.SelectedIndexChanged += new System.EventHandler(this.cbbKHHD_SelectedIndexChanged);
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(678, 661);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(75, 20);
+            this.label9.TabIndex = 44;
+            this.label9.Text = "Tổng tiền";
             // 
-            // txtMaNV
+            // groupBox3
             // 
-            this.txtMaNV.Enabled = false;
-            this.txtMaNV.Location = new System.Drawing.Point(186, 155);
-            this.txtMaNV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtMaNV.Name = "txtMaNV";
-            this.txtMaNV.Size = new System.Drawing.Size(298, 26);
-            this.txtMaNV.TabIndex = 37;
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.dGHDBH);
+            this.groupBox3.Location = new System.Drawing.Point(17, 345);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox3.Size = new System.Drawing.Size(1029, 289);
+            this.groupBox3.TabIndex = 43;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Chi Tiết Hóa Đơn";
             // 
-            // txtMaNCC
+            // dGHDBH
             // 
-            this.txtMaNCC.Enabled = false;
-            this.txtMaNCC.Location = new System.Drawing.Point(674, 32);
-            this.txtMaNCC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtMaNCC.Name = "txtMaNCC";
-            this.txtMaNCC.Size = new System.Drawing.Size(298, 26);
-            this.txtMaNCC.TabIndex = 38;
+            this.dGHDBH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dGHDBH.Location = new System.Drawing.Point(0, 38);
+            this.dGHDBH.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.dGHDBH.Name = "dGHDBH";
+            this.dGHDBH.RowHeadersWidth = 51;
+            this.dGHDBH.RowTemplate.Height = 24;
+            this.dGHDBH.Size = new System.Drawing.Size(1022, 265);
+            this.dGHDBH.TabIndex = 0;
             // 
             // FSuaXoaHoaDonNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1065, 681);
+            this.ClientSize = new System.Drawing.Size(1065, 847);
+            this.Controls.Add(this.txtTongTien);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btThoat);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btXoa);
@@ -344,6 +396,8 @@ namespace QuanLyBanHang
             this.Load += new System.EventHandler(this.FSuaXoaHoaDonNhap_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dGHDBH)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -374,5 +428,9 @@ namespace QuanLyBanHang
         private System.Windows.Forms.ComboBox cbbMaHD;
         private System.Windows.Forms.TextBox txtMaNV;
         private System.Windows.Forms.TextBox txtMaNCC;
+        private System.Windows.Forms.TextBox txtTongTien;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.DataGridView dGHDBH;
     }
 }

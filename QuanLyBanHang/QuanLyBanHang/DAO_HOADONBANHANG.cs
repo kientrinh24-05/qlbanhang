@@ -136,6 +136,61 @@ namespace QuanLyBanHang
             
         }
 
+        public dynamic DSHOADONBAN()
+        {
+            return db.HOADONBANHANGs.Select(c => new
+            {
+                c.MAHD,
+                c.KHHD,
+                c.MANV,
+                c.NHANVIEN.TenNV,
+                c.MAKH,
+                c.KHACHHANG.TenKH,
+                c.KHACHHANG.SoDT,
+                c.KHACHHANG.Diachi
+            });
+        }
+
+        public dynamic DSCTHOADON(string maHD, string KHHD)
+        {
+            List<CTHDDto> cthds = new List<CTHDDto>();
+            var hddhs= db.HOADONBANHANG_DONHANGs.Where(c => c.MAHD == maHD && c.KHHD == KHHD).Select(c => new { c.MADH, c.SOLUONG});
+            foreach(var hddh in hddhs)
+            {
+                var cthd= db.DONHANG_SANPHAMs.Where(c => c.MaDH == hddh.MADH)
+                    .Select(c => new CTHDDto()
+                    {
+                        MaDH = c.MaDH,
+                        MaSP = c.MaSP,
+                        TenSP = c.SANPHAM.TenSP,
+                        Soluong = hddh.SOLUONG * c.SoLuong,
+                        ThanhTien = hddh.SOLUONG * c.SoLuong * c.DonGia
+                    });
+                cthds.AddRange(cthd);
+            }
+            return cthds;   
+        }
+
+        public int TongTien(string maHD, string KHHD)
+        {
+            List<CTHDDto> cthds = new List<CTHDDto>();
+            var hddhs = db.HOADONBANHANG_DONHANGs.Where(c => c.MAHD == maHD && c.KHHD == KHHD).Select(c => new { c.MADH, c.SOLUONG });
+            foreach (var hddh in hddhs)
+            {
+                var cthd = db.DONHANG_SANPHAMs.Where(c => c.MaDH == hddh.MADH)
+                    .Select(c => new CTHDDto()
+                    {
+                        MaDH = c.MaDH,
+                        MaSP = c.MaSP,
+                        TenSP = c.SANPHAM.TenSP,
+                        Soluong = hddh.SOLUONG * c.SoLuong,
+                        ThanhTien = hddh.SOLUONG * c.SoLuong * c.DonGia
+                    });
+                cthds.AddRange(cthd);
+            }
+            return cthds.Sum(c=> (int)c.ThanhTien);
+        }
+
         public List<string> LayMaHoaDon()
         {
             return db.HOADONBANHANGs.Distinct().Select(c => c.MAHD).ToList();

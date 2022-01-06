@@ -139,6 +139,62 @@ namespace QuanLyBanHang
             }
         }
 
+        public dynamic DSCTHOADON(string maHD, string KHHD)
+        {
+            List<CTHDNHAPDto> cthds = new List<CTHDNHAPDto>();
+            var hddhs = db.HOADONNHAPHANG_NHAPHANGs.Where(c => c.MAHD == maHD && c.KHHD == KHHD).Select(c => new { c.MAPN, c.SOLUONG });
+            foreach (var hddh in hddhs)
+            {
+                var cthd = db.NHAPHANG_SANPHAMs.Where(c => c.MaPN == hddh.MAPN)
+                    .Select(c => new CTHDNHAPDto()
+                    {
+                        MaPN = c.MaPN,
+                        MaSP = c.MaSP,
+                        TenSP = c.SANPHAM.TenSP,
+                        Soluong = hddh.SOLUONG * c.Soluong,
+                        ThanhTien = hddh.SOLUONG * c.Soluong * c.dongia
+                    });
+                cthds.AddRange(cthd);
+            }
+            return cthds;
+        }
+
+        public int TongTien(string maHD, string KHHD)
+        {
+            List<CTHDNHAPDto> cthds = new List<CTHDNHAPDto>();
+            var hddhs = db.HOADONNHAPHANG_NHAPHANGs.Where(c => c.MAHD == maHD && c.KHHD == KHHD).Select(c => new { c.MAPN, c.SOLUONG });
+            foreach (var hddh in hddhs)
+            {
+                var cthd = db.NHAPHANG_SANPHAMs.Where(c => c.MaPN == hddh.MAPN)
+                    .Select(c => new CTHDNHAPDto()
+                    {
+                        MaPN = c.MaPN,
+                        MaSP = c.MaSP,
+                        TenSP = c.SANPHAM.TenSP,
+                        Soluong = hddh.SOLUONG * c.Soluong,
+                        ThanhTien = hddh.SOLUONG * c.Soluong * c.dongia
+                    });
+                cthds.AddRange(cthd);
+            }
+            
+            return cthds.Sum(c=> (int)c.ThanhTien);
+        }
+
+        public dynamic DSHOADONNHAP()
+        {
+            return db.HOADONNHAPHANGs.Select(c => new
+            {
+                c.MAHD,
+                c.KHHD,
+                c.MANV,
+                c.NHANVIEN.TenNV,
+                c.MANCC,
+                c.NHACUNGCAP.TenNCC,
+                c.NHACUNGCAP.SoDT,
+                c.NHACUNGCAP.Diachi
+            });
+        }
+
         public List<string> LayMaHoaDon()
         {
             return db.HOADONNHAPHANGs.Distinct().Select(c => c.MAHD).ToList();

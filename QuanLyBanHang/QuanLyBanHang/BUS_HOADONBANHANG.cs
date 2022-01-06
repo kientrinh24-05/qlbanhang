@@ -38,6 +38,15 @@ namespace QuanLyBanHang
             return hdBanHang.LayDSKHTheoMa(maKH);
         }
 
+        public void DSCTHOADON(string maHD, string KHHD, DataGridView gv)
+        {
+            gv.DataSource = hdBanHang.DSCTHOADON(maHD, KHHD);
+            
+        }
+        public int TongTien(string maHD, string KHHD)
+        {
+            return hdBanHang.TongTien(maHD, KHHD);
+        }
         public void DSDONHANG(string maKH, DateTime ngayBan, ComboBox cb)
         {
             //var a= hdBanHang.LayDSDONHANG(maKH, ngayBan)
@@ -66,6 +75,11 @@ namespace QuanLyBanHang
         public int TongSoluong(int? soluong, string MaHD)
         {
             return hdBanHang.TongSoluong(soluong, MaHD);
+        }
+
+        public void DSHOADONBANHANG(DataGridView gv)
+        {
+            gv.DataSource = hdBanHang.DSHOADONBAN();
         }
 
         public void LayMaHoaDon(ComboBox cb)

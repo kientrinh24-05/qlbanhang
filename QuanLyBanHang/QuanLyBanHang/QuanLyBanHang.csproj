@@ -119,6 +119,12 @@
     <Compile Include="FChiTietDonHangNhap.Designer.cs">
       <DependentUpon>FChiTietDonHangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="FDanhSachHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDanhSachHoaDon.Designer.cs">
+      <DependentUpon>FDanhSachHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="FHoadonban.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,6 +226,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FChiTietDonHangNhap.resx">
       <DependentUpon>FChiTietDonHangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDanhSachHoaDon.resx">
+      <DependentUpon>FDanhSachHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FHoadonban.resx">
       <DependentUpon>FHoadonban.cs</DependentUpon>

@@ -30,6 +30,7 @@ namespace QuanLyBanHang
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btThoat = new CustomButton.VBButton();
             this.txtMaKH = new System.Windows.Forms.TextBox();
             this.txtMaNV = new System.Windows.Forms.TextBox();
             this.btnSua = new CustomButton.VBButton();
@@ -51,18 +52,20 @@ namespace QuanLyBanHang
             this.dienThoaiLabel = new System.Windows.Forms.Label();
             this.txtTenNV = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btThoat = new CustomButton.VBButton();
+            this.txtTongTien = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dGHDBH = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dGHDBH)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.btThoat);
             this.groupBox1.Controls.Add(this.txtMaKH);
             this.groupBox1.Controls.Add(this.txtMaNV);
-            this.groupBox1.Controls.Add(this.btnSua);
-            this.groupBox1.Controls.Add(this.btXoa);
             this.groupBox1.Controls.Add(this.cbbKHHD);
             this.groupBox1.Controls.Add(this.cbbMaHD);
             this.groupBox1.Controls.Add(this.label7);
@@ -83,10 +86,29 @@ namespace QuanLyBanHang
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(1038, 430);
+            this.groupBox1.Size = new System.Drawing.Size(1038, 241);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chi tiết";
+            // 
+            // btThoat
+            // 
+            this.btThoat.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btThoat.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btThoat.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btThoat.BorderRadius = 20;
+            this.btThoat.BorderSize = 0;
+            this.btThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btThoat.ForeColor = System.Drawing.Color.White;
+            this.btThoat.Location = new System.Drawing.Point(852, 669);
+            this.btThoat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btThoat.Name = "btThoat";
+            this.btThoat.Size = new System.Drawing.Size(112, 89);
+            this.btThoat.TabIndex = 38;
+            this.btThoat.Text = "Thoát";
+            this.btThoat.TextColor = System.Drawing.Color.White;
+            this.btThoat.UseVisualStyleBackColor = true;
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
             // txtMaKH
             // 
@@ -115,7 +137,7 @@ namespace QuanLyBanHang
             this.btnSua.BorderSize = 0;
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Location = new System.Drawing.Point(415, 274);
+            this.btnSua.Location = new System.Drawing.Point(558, 669);
             this.btnSua.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(112, 89);
@@ -134,7 +156,7 @@ namespace QuanLyBanHang
             this.btXoa.BorderSize = 0;
             this.btXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btXoa.ForeColor = System.Drawing.Color.White;
-            this.btXoa.Location = new System.Drawing.Point(536, 274);
+            this.btXoa.Location = new System.Drawing.Point(718, 669);
             this.btXoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(112, 89);
@@ -314,37 +336,68 @@ namespace QuanLyBanHang
             this.label1.Text = "CẬP NHẬT HÓA ĐƠN BÁN HÀNG";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // btThoat
+            // txtTongTien
             // 
-            this.btThoat.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btThoat.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btThoat.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btThoat.BorderRadius = 20;
-            this.btThoat.BorderSize = 0;
-            this.btThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btThoat.ForeColor = System.Drawing.Color.White;
-            this.btThoat.Location = new System.Drawing.Point(674, 274);
-            this.btThoat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btThoat.Name = "btThoat";
-            this.btThoat.Size = new System.Drawing.Size(112, 89);
-            this.btThoat.TabIndex = 38;
-            this.btThoat.Text = "Thoát";
-            this.btThoat.TextColor = System.Drawing.Color.White;
-            this.btThoat.UseVisualStyleBackColor = true;
-            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
+            this.txtTongTien.Location = new System.Drawing.Point(802, 633);
+            this.txtTongTien.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtTongTien.Name = "txtTongTien";
+            this.txtTongTien.Size = new System.Drawing.Size(234, 26);
+            this.txtTongTien.TabIndex = 41;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(683, 636);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(75, 20);
+            this.label9.TabIndex = 40;
+            this.label9.Text = "Tổng tiền";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.dGHDBH);
+            this.groupBox3.Location = new System.Drawing.Point(14, 327);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox3.Size = new System.Drawing.Size(1029, 289);
+            this.groupBox3.TabIndex = 39;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Chi Tiết Hóa Đơn";
+            // 
+            // dGHDBH
+            // 
+            this.dGHDBH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dGHDBH.Location = new System.Drawing.Point(0, 38);
+            this.dGHDBH.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.dGHDBH.Name = "dGHDBH";
+            this.dGHDBH.RowHeadersWidth = 51;
+            this.dGHDBH.RowTemplate.Height = 24;
+            this.dGHDBH.Size = new System.Drawing.Size(1022, 265);
+            this.dGHDBH.TabIndex = 0;
             // 
             // FSuaXoaHoaDonBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 515);
+            this.ClientSize = new System.Drawing.Size(1064, 783);
+            this.Controls.Add(this.txtTongTien);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.btThoat);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnSua);
+            this.Controls.Add(this.btXoa);
             this.Name = "FSuaXoaHoaDonBan";
             this.Text = "FSuaXoaHoaDonBan";
             this.Load += new System.EventHandler(this.FSuaXoaHoaDonBan_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dGHDBH)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -375,5 +428,9 @@ namespace QuanLyBanHang
         private System.Windows.Forms.TextBox txtMaKH;
         private System.Windows.Forms.TextBox txtMaNV;
         private CustomButton.VBButton btThoat;
+        private System.Windows.Forms.TextBox txtTongTien;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.DataGridView dGHDBH;
     }
 }

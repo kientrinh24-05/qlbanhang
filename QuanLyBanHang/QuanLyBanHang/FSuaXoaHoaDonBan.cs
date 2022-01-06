@@ -42,6 +42,8 @@ namespace QuanLyBanHang
             txtTenKH.Text = thongtin.TenKH;
             txtSDT.Text = thongtin.SDT;
             txtDiachi.Text = thongtin.DiaChi;
+            bushdBanHang.DSCTHOADON(mahd, cbbKHHD.SelectedValue.ToString(), dGHDBH);
+            txtTongTien.Text = bushdBanHang.TongTien(mahd, cbbKHHD.SelectedValue.ToString()).ToString();
         }
 
         private void cbbKHHD_SelectedIndexChanged(object sender, EventArgs e)
@@ -57,6 +59,8 @@ namespace QuanLyBanHang
                 txtTenKH.Text = thongtin.TenKH;
                 txtSDT.Text = thongtin.SDT;
                 txtDiachi.Text = thongtin.DiaChi;
+                bushdBanHang.DSCTHOADON(cbbMaHD.SelectedValue.ToString(), kh, dGHDBH);
+                txtTongTien.Text = bushdBanHang.TongTien(cbbMaHD.SelectedValue.ToString(), kh).ToString();
             }    
         }
 

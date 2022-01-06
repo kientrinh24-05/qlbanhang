@@ -183,6 +183,7 @@
             this.dataGridView1.DataSource = this.tonKhoBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(2, 209);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(1124, 348);
             this.dataGridView1.TabIndex = 8;
@@ -191,64 +192,84 @@
             // 
             this.maPNDataGridViewTextBoxColumn.DataPropertyName = "MaPN";
             this.maPNDataGridViewTextBoxColumn.HeaderText = "MaPN";
+            this.maPNDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.maPNDataGridViewTextBoxColumn.Name = "maPNDataGridViewTextBoxColumn";
+            this.maPNDataGridViewTextBoxColumn.Width = 150;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.DataPropertyName = "MaSP";
             this.dataGridViewTextBoxColumn6.HeaderText = "MaSP";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 150;
             // 
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.DataPropertyName = "TenSP";
             this.dataGridViewTextBoxColumn7.HeaderText = "TenSP";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.Width = 150;
             // 
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.DataPropertyName = "DVT";
             this.dataGridViewTextBoxColumn8.HeaderText = "DVT";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.Width = 150;
             // 
             // dataGridViewTextBoxColumn9
             // 
             this.dataGridViewTextBoxColumn9.DataPropertyName = "NgayNhap";
             this.dataGridViewTextBoxColumn9.HeaderText = "NgayNhap";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.Width = 150;
             // 
             // maDHDataGridViewTextBoxColumn
             // 
             this.maDHDataGridViewTextBoxColumn.DataPropertyName = "MaDH";
             this.maDHDataGridViewTextBoxColumn.HeaderText = "MaDH";
+            this.maDHDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.maDHDataGridViewTextBoxColumn.Name = "maDHDataGridViewTextBoxColumn";
+            this.maDHDataGridViewTextBoxColumn.Width = 150;
             // 
             // ngayBanDataGridViewTextBoxColumn
             // 
             this.ngayBanDataGridViewTextBoxColumn.DataPropertyName = "NgayBan";
             this.ngayBanDataGridViewTextBoxColumn.HeaderText = "NgayBan";
+            this.ngayBanDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.ngayBanDataGridViewTextBoxColumn.Name = "ngayBanDataGridViewTextBoxColumn";
+            this.ngayBanDataGridViewTextBoxColumn.Width = 150;
             // 
             // dataGridViewTextBoxColumn10
             // 
             this.dataGridViewTextBoxColumn10.DataPropertyName = "sl_nhap";
             this.dataGridViewTextBoxColumn10.HeaderText = "sl_nhap";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            this.dataGridViewTextBoxColumn10.Width = 150;
             // 
             // slxuatDataGridViewTextBoxColumn
             // 
             this.slxuatDataGridViewTextBoxColumn.DataPropertyName = "sl_xuat";
             this.slxuatDataGridViewTextBoxColumn.HeaderText = "sl_xuat";
+            this.slxuatDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.slxuatDataGridViewTextBoxColumn.Name = "slxuatDataGridViewTextBoxColumn";
             this.slxuatDataGridViewTextBoxColumn.ReadOnly = true;
+            this.slxuatDataGridViewTextBoxColumn.Width = 150;
             // 
             // dataGridViewTextBoxColumn11
             // 
             this.dataGridViewTextBoxColumn11.DataPropertyName = "sl_ton";
             this.dataGridViewTextBoxColumn11.HeaderText = "sl_ton";
+            this.dataGridViewTextBoxColumn11.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            this.dataGridViewTextBoxColumn11.Width = 150;
             // 
             // tonKhoBindingSource
             // 
@@ -262,6 +283,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.quảnLýSảnPhẩmToolStripMenuItem,
@@ -284,34 +306,34 @@
             this.quảnLýSảnPhẩmToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.quảnLýSảnPhẩmToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
             this.quảnLýSảnPhẩmToolStripMenuItem.Name = "quảnLýSảnPhẩmToolStripMenuItem";
-            this.quảnLýSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(187, 36);
+            this.quảnLýSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(191, 36);
             this.quảnLýSảnPhẩmToolStripMenuItem.Text = "Dữ Liệu Cơ Sở";
             // 
             // quảnLýNhânViênToolStripMenuItem
             // 
             this.quảnLýNhânViênToolStripMenuItem.Name = "quảnLýNhânViênToolStripMenuItem";
-            this.quảnLýNhânViênToolStripMenuItem.Size = new System.Drawing.Size(364, 36);
+            this.quảnLýNhânViênToolStripMenuItem.Size = new System.Drawing.Size(382, 40);
             this.quảnLýNhânViênToolStripMenuItem.Text = "Quản Lý Nhân Viên";
             this.quảnLýNhânViênToolStripMenuItem.Click += new System.EventHandler(this.quảnLýNhânViênToolStripMenuItem_Click);
             // 
             // quảnLýKháchHàngToolStripMenuItem
             // 
             this.quảnLýKháchHàngToolStripMenuItem.Name = "quảnLýKháchHàngToolStripMenuItem";
-            this.quảnLýKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(364, 36);
+            this.quảnLýKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(382, 40);
             this.quảnLýKháchHàngToolStripMenuItem.Text = "Quản Lý Khách Hàng";
             this.quảnLýKháchHàngToolStripMenuItem.Click += new System.EventHandler(this.quảnLýKháchHàngToolStripMenuItem_Click);
             // 
             // quảnLýNhàCungCấpToolStripMenuItem
             // 
             this.quảnLýNhàCungCấpToolStripMenuItem.Name = "quảnLýNhàCungCấpToolStripMenuItem";
-            this.quảnLýNhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(364, 36);
+            this.quảnLýNhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(382, 40);
             this.quảnLýNhàCungCấpToolStripMenuItem.Text = "Quản Lý Nhà Cung Cấp";
             this.quảnLýNhàCungCấpToolStripMenuItem.Click += new System.EventHandler(this.quảnLýNhàCungCấpToolStripMenuItem_Click);
             // 
             // quảnLýSảnPhẩmToolStripMenuItem1
             // 
             this.quảnLýSảnPhẩmToolStripMenuItem1.Name = "quảnLýSảnPhẩmToolStripMenuItem1";
-            this.quảnLýSảnPhẩmToolStripMenuItem1.Size = new System.Drawing.Size(364, 36);
+            this.quảnLýSảnPhẩmToolStripMenuItem1.Size = new System.Drawing.Size(382, 40);
             this.quảnLýSảnPhẩmToolStripMenuItem1.Text = "Quản Lý Sản Phẩm";
             this.quảnLýSảnPhẩmToolStripMenuItem1.Click += new System.EventHandler(this.quảnLýSảnPhẩmToolStripMenuItem1_Click);
             // 
@@ -320,7 +342,7 @@
             this.quảnLýĐơnHàngToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.quảnLýĐơnHàngToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
             this.quảnLýĐơnHàngToolStripMenuItem.Name = "quảnLýĐơnHàngToolStripMenuItem";
-            this.quảnLýĐơnHàngToolStripMenuItem.Size = new System.Drawing.Size(243, 36);
+            this.quảnLýĐơnHàngToolStripMenuItem.Size = new System.Drawing.Size(247, 36);
             this.quảnLýĐơnHàngToolStripMenuItem.Text = "Quản lý nhập hàng";
             this.quảnLýĐơnHàngToolStripMenuItem.Click += new System.EventHandler(this.quảnLýĐơnHàngToolStripMenuItem_Click);
             // 
@@ -329,7 +351,7 @@
             this.toolStripMenuItem2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.toolStripMenuItem2.ForeColor = System.Drawing.Color.Blue;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(229, 36);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(233, 36);
             this.toolStripMenuItem2.Text = "Quản lý bán hàng";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
@@ -338,7 +360,7 @@
             this.toolStripMenuItem3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.toolStripMenuItem3.ForeColor = System.Drawing.Color.Blue;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(223, 36);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(227, 36);
             this.toolStripMenuItem3.Text = "Báo Cáo Tồn Kho";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
